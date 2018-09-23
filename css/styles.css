@@ -284,8 +284,11 @@ nav h1 a {
 	}
 }
 
-/*@media screen and (min-width: 950px) {
-	#reviews-list li {
-		width: 75%;
+@media screen and (min-width: 700px) and (max-width: 949px) {
+	#restaurant-img {
+		height: 450px;
 	}
-}*/
+	.inside #map-container {
+		height: 25em;
+	}
+}
