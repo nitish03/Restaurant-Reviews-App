@@ -275,11 +275,14 @@ nav h1 a {
 }
 /* ============= Breakpoints ============ */
 
-/*@media screen and (min-width: 350px) {
-	#reviews-list li {
-		width: 65%;
+@media screen and (min-width: 950px) {
+	#restaurant-img {
+		height: 600px;
 	}
-}*/
+	.inside #map-container {
+		height: 30em;
+	}
+}
 
 /*@media screen and (min-width: 950px) {
 	#reviews-list li {
