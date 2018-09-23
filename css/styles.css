@@ -292,3 +292,12 @@ nav h1 a {
 		height: 25em;
 	}
 }
+
+@media and screen (min-width: 500px) and (max-width: 699px) {
+	#restaurant-img {
+		height: 300px;
+	}
+	.inside #map-container {
+		height: 22em;
+	}
+}
