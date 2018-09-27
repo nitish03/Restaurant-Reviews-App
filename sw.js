@@ -1,4 +1,4 @@
-const expectCaches = 'restaurant-v1';
+const expectCaches = ['restaurant-v1'];
 
 const cacheFolder = [
   './',
@@ -23,4 +23,10 @@ const cacheFolder = [
 
 self.addEventListener('install', event => {
   console.log('installing!');
+  event.waitUntil(
+    caches.open(expectCaches).then(cache => {
+      console.log(cacheFolder);
+      return cache.addAll(cacheFolder);
+    })
+  );
 });
